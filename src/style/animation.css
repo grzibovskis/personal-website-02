@@ -1,0 +1,161 @@
+
+/*====================== Typewiter animation =======================*/
+
+.typewriter {
+    display: none;
+}
+h1 {
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    width: max-content;
+    top: 150px;
+    left: 400px;
+    color: var(--light-gray)
+
+}
+h1::before,
+h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+h1::before {
+    background: var(--bg-color);
+    animation: typewriter 4s steps(23) 1s forwards;
+}
+
+h1::after {
+    width: 0.125em;
+    background: white;
+    animation: 
+        typewriter 4s steps(23) 1s forwards,
+        blink 750ms steps(24) infinite;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+
+/*===================== Circle ======================*/
+
+#circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background: var(--yellow);
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--bg-color);
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+}
+
+#circle:hover {
+    transform: scale(1.2);
+}
+
+#circle_sec {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background: var(--yellow);
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--bg-color);
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+}
+
+#circle_sec:hover {
+    transform: scale(1.2);
+}
+
+
+#circle_third {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background: var(--yellow);
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--bg-color);
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+}
+
+#circle_third:hover {
+    transform: scale(1.2);
+}
+
+/*============================= Bulb ==============================*/
+
+.light_on_off {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 260px;
+    left: 240px;
+    transform: rotate(-40deg);
+    
+}
+.lighton {
+    
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.lightoff {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}
+
+/* ==================== MEDIA QUERIES ( Medium devices ) ================*/
+
+
+@media screen and (max-width: 1290px) {
+
+    h1 {
+        top: 250px;
+        left: 100px;
+    
+    }
+    #circle_sec {
+        position: relative;
+        left: 200px;
+    }
+}
+
+@media screen and (max-width: 667px) {
+
+    h1 {
+        top: 250px;
+        left: 20px;
+    
+    }
+}

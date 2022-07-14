@@ -1,0 +1,18 @@
+.header_container {
+    
+    height: 60vh;
+}
+
+
+.action_btn { /* There is #circle priority, animation.css*/
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+
+.action_btn_sec {
+    position: relative;
+    left: 700px;
+    top: 400px;
+
+}

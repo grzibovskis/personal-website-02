@@ -1,0 +1,97 @@
+.about_me {
+    display: none;
+    height: 95vh;
+}
+
+.me {
+
+}
+
+.img_me {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 250px;
+    left: 200px;
+    transform: rotate(-10deg);
+    
+}
+
+.scroll_down {
+    position: fixed;
+    right: 2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem; 
+    color: var(--light-gray);
+    z-index: 1;
+}
+
+.aboutme_description {
+    color: var(--light-gray);
+    position: absolute;
+    left: 600px;
+    width: 700px;
+}
+
+.span_f {
+    color: var(--yellow);
+}
+
+.action_btn_third {
+    position: relative;
+    left: 900px;
+    top: 400px;
+    display: fixed;
+
+}
+
+.bar {
+    position: relative;
+    top: 450px;
+    background-color: var(--light-gray);
+    height: 5vh;
+}
+
+/* ==================== MEDIA QUERIES ( Medium devices ) ================*/
+
+
+@media screen and (max-width: 1290px) {
+
+    .aboutme_description {
+        left: 590px;
+        width: 300px;
+    }
+
+    .action_btn_third {
+        position: relative;
+        left: 500px;
+        top: 400px;
+        display: fixed;
+    
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+    
+    .aboutme_description {
+        left: 90px;
+        top: 1250px;
+        width: 300px;
+    }
+
+    .about_me {
+        height: 120vh;
+    }
+    .bar {
+        display: none;
+    }
+    .action_btn_third {
+        left: 200px;
+        top: 650px;
+    
+    
+    }
+}
