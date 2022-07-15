@@ -95,3 +95,34 @@
     
     }
 }
+
+@media screen and (max-width: 667px) {
+
+    .img_me {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        top: 15rem;
+        left: 2rem;
+        transform: rotate(-10deg);
+        
+    }
+
+    .about_me {
+        display: none;
+        height: 185vh;
+    }
+
+    .aboutme_description {
+        left: 2rem;
+        top: 75rem;
+        width: 307px;
+    }
+    .action_btn_third {
+        left: 10rem;
+        top: 50rem;
+    }
+    .scroll_down{
+        display: none;
+    }
+}

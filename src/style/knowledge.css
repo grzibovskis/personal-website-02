@@ -210,19 +210,16 @@
 @media screen and (max-width: 1663px) {
 
     .portfolio_container {
-        position: relative;
         width: 470px;
         height: 785px;
         top: 0px;
         left: 500px;
     }
-
 }
 
 @media screen and (max-width: 1290px) {
 
     .portfolio_container {
-        position: relative;
         width: 470px;
         height: 785px;
         top: 0px;
@@ -265,21 +262,84 @@
         top: -700px;
     }
     .footer_text {
-        position: relative;
         top: 150px;
         left: 100px;
         width: 500px;
-        color: var(--light-gray);
+
     }
     .knowledge_text_first { 
-        font-weight: bold;
-        color: var(--bg-color);
-        position: relative;
         top: 70px;
         left: 20px;
         width: 500px;
     }
 
+}
 
+@media screen and (max-width: 667px) {
+    .sidebar {
+        display: none;
+    }
+    .knowledge_text_first { 
+        left: 1rem;
+        width: 300px;
+
+    }
+    .knowledge_list {
+        top: 10rem;
+        left: 3rem;
+        width: 400px;
+        height: 200px;
+    }
+    .portfolio_container {
+        top: 20rem;
+        left: 1rem;
+    }
+    .portfolio_container_image {
+        background: var(--yellow);
+        width: 250px;
+        position: relative;
+        left: -8rem;
+        
+    }
+    .portfolio_container_text {
+        width: 250px;
+        height: 100px;
+        padding: 1em 0 0 1em;
+        top: -58rem;
+        left: -170px;
+        color: var(--yellow);
+        background-color: var(--bg-color);
+        font-weight: bold;
+        box-shadow: 1px 1px 5px var(--bg-color);
+    }
+    .CTA {
+        transform: rotate(0deg);
+        left: 1rem;
+        top: -57rem;
+    }
+    .footer_text {
+        top: 150px;
+        left: 100px;
+        width: 500px;
+
+    }
+    .knowledge_text_first { 
+        top: 70px;
+        left: 20px;
+        width: 500px;
+    }
+    .footer_text {
+        top: 22rem;
+        left: 1rem;
+        width: 350px;
+        color: var(--light-gray);
+        background-color: var(--bg-color);
+        box-shadow: 1px 1px 5px var(--bg-color);
+    }
+
+    .knowledge {
+        height: 244vh;
+
+    }
 
 }

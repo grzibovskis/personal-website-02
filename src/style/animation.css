@@ -9,8 +9,8 @@ h1 {
     position: relative;
     font-family: "Source Code Pro", monospace;
     width: max-content;
-    top: 150px;
-    left: 400px;
+    top: 10rem;
+    left: 25rem;
     color: var(--light-gray)
 
 }
@@ -141,8 +141,8 @@ h1::after {
 @media screen and (max-width: 1290px) {
 
     h1 {
-        top: 250px;
-        left: 100px;
+        top: 15rem;
+        left: 10rem;
     
     }
     #circle_sec {
@@ -154,8 +154,19 @@ h1::after {
 @media screen and (max-width: 667px) {
 
     h1 {
-        top: 250px;
-        left: 20px;
+        top: 15rem;
+        left: 2rem;
     
     }
+    .light_on_off {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        position: relative;
+        top: 16rem;
+        left: 5rem;
+        transform: rotate(-40deg);
+        
+    }
+
 }
